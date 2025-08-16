@@ -240,7 +240,7 @@ sizes*/
         background-color: rgb(255, 255, 255);
     }
     #biscuits{
-        background-color: rgb(149,238,233);
+        background-color: rgb(149,238,223);
     }
     
 }
@@ -394,12 +394,14 @@ input[type="button"]:hover{
 /*ABOUT*/
 
 /*Styles the featured recipe p tag*/
-#about{
-    font-family: 'Sacramento', cursive; /*Font from 
-    fonts.google.com*/
-    font-size: 60px;
-    color: rgb(0, 80, 67);
+
+#about-main-text{
+    text-align: justify;
+    padding-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
+
 
 /*CONTACT FORM CSS*/
 
@@ -446,7 +448,7 @@ label{
     fonts.google.com*/
     font-size: 20px;
     font-weight: bold;
-    margin: top;
+    margin: 10px;
 }
 
 textarea{
