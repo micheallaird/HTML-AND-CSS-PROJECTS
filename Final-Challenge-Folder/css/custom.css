@@ -1,0 +1,154 @@
+/*Navbar*/
+.nav-bar {
+    background-color: aqua;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: -8px;
+    margin-left: -10px;
+    margin-right: -10px;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
+
+#nav-border {
+    padding-bottom: 10px;
+}
+
+ul {
+    display: inline-flex;
+    font-size: xx-large;
+    list-style-type: none;
+    margin-top: 25px;
+    margin-bottom: 35px;
+    padding: 5px;
+}
+
+a {
+    font-size: 30px;
+    font-weight: 700;
+    text-shadow: 1px .5px 4px rgba(46, 31, 31, 0.5);
+    color: black;
+    text-decoration: none;
+    /*Removes the default link styling*/
+    padding: 50px;
+}
+
+/*General Styling*/
+
+p:hover {
+    color: blue;
+}
+
+p {
+    font-size: 35px;
+    font-weight: 500;
+    color: green;
+    text-align: center;
+}
+
+a:hover {
+    color: gray;
+}
+
+/*Image*/
+
+/* Container holding the image and the text */
+.container {
+    position: relative;
+    text-align: center;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Photo text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: xx-large;
+    font-weight: bold;
+    display: block;
+    width: 50%;
+}
+
+/*Hover Image*/
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 50%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    /*Gives the image a drop shadow and border*/
+    filter: drop-shadow(8px 8px 10px gray);
+    border: 2px solid black;
+    padding: 15px;
+    border-radius: 60px 25px;
+    margin-bottom: 50px;
+}
+
+.container:hover .image {
+    opacity: 0.3;
+}
+
+.text {
+    background-color: green;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+/*Two Column*/
+
+h2 {
+    text-align: center;
+}
+
+.container2 {
+    color: black;
+    font-size: large;
+    text-align: center;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    height: 200px;
+    background-color: aqua;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*Table*/
+table,
+th,
+td {
+    border: 3px solid green;
+    padding: 10px 30px 10px 30px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+th {
+    background-color: aqua;
+}
+
+/*Footer*/
+footer {
+    text-align: center;
+    font-weight: bold;
+}

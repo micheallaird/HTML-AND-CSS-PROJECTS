@@ -1,0 +1,11 @@
+@media screen and (max-width: 600px) {
+    p {
+       color: blue;
+    }
+}
+
+/*Body*/
+
+p {
+    font-size: larger;
+}
