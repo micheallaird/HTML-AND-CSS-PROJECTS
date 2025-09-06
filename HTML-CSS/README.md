@@ -1,5 +1,5 @@
 # Grace Hopper dedication page project
-This page is all about Grace Hopper, the pioneering computer scientist and U.S. Navy verteran.
+This page is all about Grace Hopper, the pioneering computer scientist and U.S. Navy veteran.
 
 ## Research Notes
 Wikipedia article: https://en.wikipedia.org/wiki/Grace_Hopper
