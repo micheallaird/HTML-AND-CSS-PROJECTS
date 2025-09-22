@@ -194,11 +194,6 @@ img{
 
 /*MOVIE CARDS*/
 
-.container{
-    padding: 100px;
-    height: auto;
-}
-
 .card{
     border: 5px solid var(--main-color);
     border-radius: 5px;

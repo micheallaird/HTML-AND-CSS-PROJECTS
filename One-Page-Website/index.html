@@ -5,16 +5,17 @@
     <title>Missions Trip</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="CSS/one_page_website.css">
+    <script src="JS/one_page_website.js" defer></script>
 </head>
 
 <body>
     <header>
         <div id="top"></div>
-        <h1>Dominican Republic Missions Trip</h1>
+        <h1>Dominican Republic Missions Trip!</h1>
     </header>
     <!--NAVBAR-->
     <nav>
-        <ul>
+        <ul class="navbar">
             <li><a href="#">Home</a></li>
             <li><a href="#team">Team Image</a></li>
             <li><a href="#van">Team Van</a></li>
@@ -34,75 +35,196 @@
             <li><a href="#form">Sign up Form</a></li>
         </ul>
     </nav>
-    <!--HEADER-->
-    <header>
-        <div>
-            <h1>Dominican Republic Missions Trip!</h1>
-        </div>
-    </header>
     <!--Trip Images-->
     <section>
         <div>
-            <div>
+            <div class="row">
                 <!--Team Image-->
-                <div id="team">
+                <div id="team" class="column">
                     <h3>Team</h3>
-                    <img src="images/IMG-20250803-WA0005.jpg" alt="Picture of Team">
+                    <img src="Images/Small_Images/Team.jpg" alt="Picture of Team" onclick="openModal();currentSlide(1)">
                 </div>
                 <!--Team Van-->
-                <div id="van">
+                <div id="van" class="column">
                     <h3> Team Van</h3>
-                    <img src="images/IMG-20250803-WA0008.jpg" alt="Picture of Team Van">
+                    <img src="Images/Small_Images/Team_Van.jpg" alt="Picture of Team Van"
+                        onclick="openModal();currentSlide(2)">
                 </div>
                 <!--First Location-->
-                <div id="1">
+                <div id="1" class="column">
                     <h3> First Location</h3>
-                    <img src="images/IMG-20250803-WA0006.jpg" alt="Picture of First Location">
+                    <img src="Images/Small_Images/First_Location.jpg" alt="Picture of First Location"
+                        onclick="openModal();currentSlide(3)">
                 </div>
                 <!--Second Location-->
-                <div id="2">
+                <div id="2" class="column">
                     <h3> Second Location</h3>
-                    <img src="images/IMG-20250803-WA0002.jpg" alt="Picture of Second Location">
+                    <img src="Images/Small_Images/Second_Location.jpg" alt="Picture of Second Location"
+                        onclick="openModal();currentSlide(4)">
                 </div>
                 <!--Third Location-->
-                <div id="3">
+                <div id="3" class="column">
                     <h3> Third Location</h3>
-                    <img src="images/IMG-20250803-WA0009.jpg" alt="Picture of Third Location">
+                    <img src="Images/Small_Images/Third_Location.jpg" alt="Picture of Third Location"
+                        onclick="openModal();currentSlide(5)">
                 </div>
                 <!--Forth Location-->
-                <div id="4">
+                <div id="4" class="column">
                     <h3> Forth Location</h3>
-                    <img src="images/IMG-20250803-WA0012.jpg" alt="Picture of Forth Location">
+                    <img src="Images/Small_Images/Fourth_Location.jpg" alt="Picture of Fourth Location"
+                        onclick="openModal();currentSlide(6)">
                 </div>
                 <!--Gathering Attendees-->
-                <div id="gathering">
+                <div id="gathering" class="column">
                     <h3> Gathering Attendees</h3>
-                    <img src="images/IMG-20250803-WA0001.jpg" alt="Picture of Gathering Attendees">
+                    <img src="Images/Small_Images/Gathering.jpg" alt="Picture of Gathering Attendees"
+                        onclick="openModal();currentSlide(7)">
                 </div>
                 <!--Puppets-->
-                <div id="puppets">
+                <div id="puppets" class="column">
                     <h3> Puppets</h3>
-                    <img src="images/IMG-20250803-WA0011.jpg" alt="Picture of Puppets">
+                    <img src="Images/Small_Images/Puppets.jpg" alt="Picture of Puppets"
+                        onclick="openModal();currentSlide(8)">
                 </div>
                 <!--Goat Neighbor-->
-                <div id="goat">
+                <div id="goat" class="column">
                     <h3> Goat Neighbor &#128016</h3>
-                    <img src="images/IMG-20250803-WA0015.jpg" alt="Picture of Goat Neighbor">
+                    <img src="Images/Small_Images/Goat.jpg" alt="Picture of Goat Neighbor"
+                        onclick="openModal();currentSlide(9)">
                 </div>
                 <!--Fifth Location-->
-                <div id="5">
+                <div id="5" class="column">
                     <h3> Fifth Location</h3>
-                    <img src="images/IMG-20250803-WA0013.jpg" alt="Picture of Fifth Location">
+                    <img src="Images/Small_Images/Fifth_Location.jpg" alt="Picture of Fifth Location"
+                        onclick="openModal();currentSlide(10)">
                 </div>
                 <!--Pastor's Conference-->
-                <div id="conference">
+                <div id="conference" class="column">
                     <h3> Pastor's Conference</h3>
-                    <img src="images/IMG-20250803-WA0004.jpg" alt="Picture of Pastor's Conference">
+                    <img src="Images/Small_Images/Conference.jpg" alt="Picture of Pastor's Conference"
+                        onclick="openModal();currentSlide(11)">
                 </div>
                 <!--Sunday Church-->
-                <div id="church">
+                <div id="church" class="column">
                     <h3> Sunday Church</h3>
-                    <img src="images/IMG-20250803-WA0014.jpg" alt="Picture of Sunday Church">
+                    <img src="Images/Small_Images/Church.jpg" alt="Picture of Sunday Church"
+                        onclick="openModal();currentSlide(12)">
+                </div>
+            </div>
+        </div>
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal image-wrapper">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <div class="numbertext">1 / 12</div>
+                    <img src="Images/Large Images/Team_Large.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 12</div>
+                    <img src="Images/Large Images/Team_Van_Large.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 12</div>
+                    <img src="Images/Large Images/First_Location_Large.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 12</div>
+                    <img src="Images/Large Images/Second_Location_Large.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5 / 12</div>
+                    <img src="Images/Large Images/Third_Location_Large.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 12</div>
+                    <img src="Images/Large Images/Fourth_Location_Large.jpg">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">7 / 12</div>
+                    <img src="Images/Large Images/Fifth_Location_Large.jpg">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">8 / 12</div>
+                    <img src="Images/Large Images/Gathering_Large.jpg">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">9 / 12</div>
+                    <img src="Images/Large Images/Puppets_Large.jpg">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">10 / 12</div>
+                    <img src="Images/Large Images/Goat_Large.jpg">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">11 / 12</div>
+                    <img src="Images/Large Images/Conference_Large.jpg">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">12 / 12</div>
+                    <img src="Images/Large Images/Church_Large.jpg">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+                <!-- Thumbnail images -->
+                <div class="column">
+                    <img class="demo cursor" src="Images/Small_Images/Team.jpg" onclick="currentSlide(1)"
+                        alt="Picture of Team">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Images/Small_Images/Team_Van.jpg" onclick="currentSlide(2)"
+                        alt="Picture of Team Van">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Images/Small_Images/First_Location.jpg" onclick="currentSlide(3)"
+                        alt="Picture of First Location">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Images/Small_Images/Second_Location.jpg" onclick="currentSlide(4)"
+                        alt="Picture of Second Location">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Images/Small_Images/Third_Location.jpg" onclick="currentSlide(5)"
+                        alt="Picture of Third Location">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Images/Small_Images/Fourth_Location.jpg" onclick="currentSlide(6)"
+                        alt="Picture of Fourth Location">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Images/Small_Images/Gathering.jpg" onclick="currentSlide(7)"
+                        alt="Picture of Fifth Location">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Images/Small_Images/Puppets.jpg" onclick="currentSlide(8)"
+                        alt="Picture of Gathering Attendees">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Images/Small_Images/Goat.jpg" onclick="currentSlide(9)"
+                        alt="Picture of Puppets">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Images/Small_Images/Fifth_Location.jpg" onclick="currentSlide(10)"
+                        alt="Picture of Goat Neighbor">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Images/Small_Images/Conference.jpg" onclick="currentSlide(11)"
+                        alt="Picture of Pastor's Conference">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Images/Small_Images/Church.jpg" onclick="currentSlide(12)"
+                        alt="Picture of Sunday Church">
                 </div>
             </div>
         </div>
@@ -112,24 +234,35 @@
         <!--Team Worship-->
         <div id="worship">
             <h3>Team Led Worship Video</h3>
-            <iframe width="1280" height="720" src="Videos/worship.mp4"></iframe>
+            <video style="width:auto;height:auto;" controls>
+                <source src="Videos/worship.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
         <!--Lollipop Skit-->
         <div id="lollipop">
             <h3>Lollipop Skit Video</h3>
-            <iframe width="1280" height="720" src="Videos/lollipop.mp4"></iframe>
+            <video style="width:auto;height:auto;" controls>
+                <source src="Videos/lollipop.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
         <!--Main Skit-->
         <div id="skit">
             <h3>Main Skit Video</h3>
-            <iframe width="1280" height="720" src="Videos/skit.mp4"></iframe>
+            <video style="width:auto;height:auto;" controls>
+                <source src="Videos/skit.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
     </section>
     <!--FOOTER-->
-    <footer>
-        <h2>Sing up for next year's trip!</h2>
+    <footer class="footer">
+        <h2>Sign up for next year's trip!</h2>
+        <h3>Sign Up Form</h3>
         <div class="form-container" id="form">
-            <form>
+            <!--Form-->
+            <form action="#" method="post">
                 <div class="input-box">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" placeholder="Enter your name">
@@ -138,7 +271,7 @@
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" placeholder="Enter your email">
                 </div>
-                <button type="submit">Submit</button>
+                <button type="submit" id="submit-button">Submit</button>
             </form>
             <a href="#top" class="back-to-top">Back to Top</a>
         </div>
@@ -149,6 +282,8 @@
                 </td>
                 <td>
                     <p>Sand Creek High School</p>
+                </td>
+                <td>
                     <p>Colorado Springs, CO</p>
                 </td>
             </tr>
