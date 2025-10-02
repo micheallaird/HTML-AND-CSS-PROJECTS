@@ -1,18 +1,34 @@
-p:hover{
-    color: gray; /*Changes the color of the anchor element when a user hovers their mouse over it*/
+p:hover {
+    color: gray;
+    /*Changes the color of the anchor element when a user hovers their mouse over it*/
 }
 
 /*The animation code*/
-@keyframes example{
-    from {background-color: green;}
-    to {background-color: yellow;}
+@keyframes example {
+    from {
+        background-color: green;
+    }
+
+    to {
+        background-color: yellow;
+    }
 }
 
 /*The element to apply the animation to*/
-div{
+div {
     width: 100px;
     height: 100px;
     background-color: green;
     animation-name: example;
     animation-duration: 5s;
+}
+
+body {
+    opacity: 1;
+    transition: 1s opacity;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
 }
